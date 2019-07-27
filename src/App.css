@@ -1,0 +1,115 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #F0EDED;
+  height: 150px;
+  padding: 20px;
+  color: #222;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.marginTop15 {
+    margin-top :15px;
+}
+
+.paddingTop15 {
+    padding-top :15px;
+}
+
+
+.App-content {
+  min-height:300px;
+  text-align: center;
+}
+
+.unOrdered {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #657EC2;
+}
+
+.actionDelete {
+    color:#fff;
+    
+}
+
+
+ul.starwar  {
+  list-style-type: none;
+  color: orange;
+  text-align:left;
+  border:1px solid blue;
+  width:100%;
+  
+}
+
+
+ul.starwarHead  {
+  list-style-type: none;
+  color: orange;
+  text-align:left;
+  border:1px solid blue;
+  width:100%;
+  
+}
+
+ul.starwarHead  li {
+  display: inline;
+  width:10%;
+  padding-left:30px;
+  padding-right:20px;
+  text-align:center;
+}
+
+ul.starwarHead:first-child{
+  color:yellow;
+  padding-left:0px;
+  padding-right:20px;
+  text-align:left;
+}
+
+ul.starwar  li {
+  display: inline;
+  width:10%;
+  padding-left:20px;
+  padding-right:20px;
+  text-align:left;
+}
+
+ul.starwar li:first-child{
+  width:5px;
+  float:left;
+  padding-left:0px;
+  color:yellow;
+}
+
+
+.form-control {
+  font-size: 2rem;
+  padding: 25px 15px;
+}
+
+.marginTop {
+    margin-top:20px;
+}
