@@ -1,7 +1,5 @@
 import { starwarConstants } from '../_constants';
 import { starwarService } from '../_services';
-import { alertActions } from './';
-import { history } from '../_helpers';
 
 export const starwarActions = {
     getAll

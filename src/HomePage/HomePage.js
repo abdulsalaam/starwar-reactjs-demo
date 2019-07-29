@@ -20,7 +20,7 @@ class HomePage extends React.Component {
             <div className="col-lg-12">
              <div class="collapse navbar-collapse App-header" id="mainNavBar">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="#">Home</a></li>
+                        <li class="active"><Link to="/">Home</Link></li>
                         <li><Link to="/starwar" component={StarwarPage} >Star War</Link></li>
                     </ul>
                         <ul class="nav navbar-nav navbar-right">
@@ -42,7 +42,7 @@ class HomePage extends React.Component {
                                 {
                                     user.deleting ? <em> - Deleting...</em>
                                     : user.deleteError ? <span className="text-danger"> - ERROR: {user.deleteError}</span>
-                                    : <span> - <a onClick={this.handleDeleteUser(user.id)} className="actionDelete" >Delete</a></span>
+                                    : <span> - <button onClick={this.handleDeleteUser(user.id)} className="actionDelete" >Delete</button></span>
                                 }
                             </li>
                         )}

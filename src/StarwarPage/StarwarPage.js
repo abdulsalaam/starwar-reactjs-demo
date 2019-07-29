@@ -18,7 +18,7 @@ class StarwarPage extends React.Component {
     componentDidMount() {
         //this.props.getUsers();
         this.props.getStarwars();
-        const { user, starwars } = this.props;
+        const { starwars } = this.props;
         console.log('eeeeee:',starwars)
         
         this.setState({
@@ -85,8 +85,8 @@ class StarwarPage extends React.Component {
             <div className="col-lg-12">
              <div class="collapse navbar-collapse App-header" id="mainNavBar">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="#">Starwar</a></li>
-                        <li><Link to="/starwar" >Star War</Link></li>
+                        <li><Link to="/">Home</Link></li>
+                        <li class="active"><Link to="/starwar" >Star War</Link></li>
                     </ul>
                         <ul class="nav navbar-nav navbar-right">
                         <li className="marginTop15"><span>Hi! {user.firstName}</span></li>
@@ -110,7 +110,7 @@ class StarwarPage extends React.Component {
                     <ul className="unOrdered">
                         {this.state.filtered.results.map((swar, index) =>
                             <li key={index}>
-                                {index == 0 && <ul className="starwarHead"> <li>S.N</li>  <li>Name</li> <li> Climate</li> <li> Population</li> <li> Created</li> </ul>}
+                                {index === 0 && <ul className="starwarHead"> <li>S.N</li>  <li>Name</li> <li> Climate</li> <li> Population</li> <li> Created</li> </ul>}
                                 <ul className="starwar"> 
                                 <li>{index + 1}</li>  <li>{swar.name}</li> <li> {swar.climate}</li> <li> {swar.population}</li>  <li> {swar.created}</li> 
                                 </ul>
